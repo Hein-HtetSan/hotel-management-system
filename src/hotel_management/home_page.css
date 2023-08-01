@@ -1,0 +1,31 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.home_image{
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.singup{
+    -fx-background-color: none;
+    -fx-text-fill: #176B87;
+}
+
+.login{
+    -fx-background-color: #176B87;
+    -fx-text-fill: #fff;
+    -fx-border-radius: 10px;
+}
+
+.login:hover{
+    -fx-background-color: #64CCC5;
+}
+.singup:hover{
+    -fx-background-color: #efefef;
+}
+
