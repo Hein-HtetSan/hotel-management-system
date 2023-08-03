@@ -23,13 +23,13 @@ public class Hotel_management extends Application {
     
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("home_page.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("admin_reservation.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
+        stage.setTitle("Beauty Land Hotel");
         stage.setScene(scene);
         stage.show();
     }
-
     /**
      * @param args the command line arguments
      */

@@ -1,0 +1,44 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.input{
+    -fx-background-color: none;
+    -fx-border-radius: 7px;
+    -fx-border-color: #176B87;
+    -fx-border-width: 2px;
+}
+
+.input:focused{
+    -fx-background-color: #64CCC5, none;
+}
+
+.font{
+    -fx-font: "Arial", sans-serif;
+}
+
+.font-color{
+    -fx-text-fill: #176B87;
+}
+
+.backbtn{
+    -fx-border-color: #bbccbb;
+    -fx-border-radius: 7px;
+    -fx-background-color: none;
+    -fx-text-fill: #444;
+    -fx-font: "Arial", sans-serif;
+}
+.backbtn:hover{
+    -fx-background-color: #dedede;
+}
+.singup{
+    -fx-background-color: #176B87;
+    -fx-text-fill: #fff;
+}
+.singup:hover{
+    -fx-background-color: #64CCC5;
+}

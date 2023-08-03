@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="854.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+    <stylesheets>
+        <URL value="@loginasadmin.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="341.0" layoutX="62.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="438.0" layoutY="169.0" text="Login as">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="564.0" layoutY="169.0" style="-fx-text-fill: #176B87;" text="Admin">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <Line endX="19.4000244140625" layoutX="538.0" layoutY="212.0" startX="-100.0" strokeWidth="4.0" />
+      <TextField layoutX="438.0" layoutY="266.0" prefHeight="54.0" prefWidth="349.0" styleClass="input" />
+      <PasswordField layoutX="437.0" layoutY="357.0" prefHeight="54.0" prefWidth="350.0" styleClass="input" />
+      <Label layoutX="438.0" layoutY="242.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: &quot;Arial&quot;;" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="436.0" layoutY="449.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="115.0" style="-fx-font-weight: bold;" styleClass="backbtn" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="671.0" layoutY="449.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="115.0" styleClass="singup" text="Login">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="438.0" layoutY="338.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: &quot;Arial&quot;;" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
