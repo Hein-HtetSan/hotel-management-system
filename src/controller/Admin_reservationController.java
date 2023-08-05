@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package hotel_management;
+package controller;
 
 import java.io.IOException;
 import java.net.URL;
@@ -36,19 +36,19 @@ public class Admin_reservationController implements Initializable {
 
     @FXML
     private void callReservation(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("reservation.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../view/reservation.fxml"));
         spane.setCenter(root);
     }
 
     @FXML
     private void callRoom(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("room.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../view/room.fxml"));
         spane.setCenter(root);
     }
 
     @FXML
     private void onGuest(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("guest.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../view/guest.fxml"));
         spane.setCenter(root);
     }
 

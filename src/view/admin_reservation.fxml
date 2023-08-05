@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="927.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel_management.Admin_reservationController">
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="927.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin_reservationController">
     <stylesheets>
-        <URL value="@admin_reservation.css" />
+        <URL value="@../style/admin_reservation.css" />
     </stylesheets>
    <children>
       <BorderPane fx:id="spane" layoutX="1.0" prefHeight="710.0" prefWidth="925.0">

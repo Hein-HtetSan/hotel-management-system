@@ -10,29 +10,29 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="621.0" prefWidth="837.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+<AnchorPane id="AnchorPane" prefHeight="621.0" prefWidth="837.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
-        <URL value="@home_page.css" />
+        <URL value="@../style/home_page.css" />
     </stylesheets>
    <children>
       <ImageView fitHeight="243.0" fitWidth="157.0" layoutX="38.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" styleClass="home_image">
          <image>
-            <Image url="@img1.jpg" />
+            <Image url="@../images/img1.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="243.0" fitWidth="157.0" layoutX="38.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true" styleClass="home_image">
          <image>
-            <Image url="@img2.jpg" />
+            <Image url="@../images/img2.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="243.0" fitWidth="157.0" layoutX="242.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" styleClass="home_image">
          <image>
-            <Image url="@img3.jpg" />
+            <Image url="@../images/img3.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="243.0" fitWidth="157.0" layoutX="241.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true" styleClass="home_image">
          <image>
-            <Image url="@img4.jpg" />
+            <Image url="@../images/img4.jpg" />
          </image>
       </ImageView>
       <Label layoutX="512.0" layoutY="182.0" prefHeight="48.0" prefWidth="222.0" text="Easy Way to">
@@ -78,12 +78,12 @@
       </Hyperlink>
       <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="539.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 270;">
          <image>
-            <Image url="@plane.png" />
+            <Image url="@../images/plane.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="125.0" fitWidth="244.0" layoutX="576.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@dots.png" />
+            <Image url="@../images/dots.png" />
          </image>
       </ImageView>
    </children>

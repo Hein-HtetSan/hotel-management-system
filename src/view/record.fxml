@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="676.0" prefWidth="952.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+    <stylesheets>
+        <URL value="@../style/record.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="71.0" layoutY="34.0" styleClass="title" text="Record" />
+      <Label layoutX="71.0" layoutY="117.0" styleClass="sub-title" text="Record Lists of Your Hotel" />
+      <TableView layoutX="69.0" layoutY="153.0" prefHeight="380.0" prefWidth="846.0">
+        <columns>
+          <TableColumn prefWidth="137.60000610351562" text="Room ID" />
+          <TableColumn prefWidth="146.40000915527344" text="Guest ID" />
+            <TableColumn prefWidth="181.5999755859375" text="Per Day" />
+            <TableColumn prefWidth="181.60003662109375" text="Day Count" />
+            <TableColumn prefWidth="196.79998779296875" text="Total" />
+        </columns>
+      </TableView>
+      <Button layoutX="69.0" layoutY="546.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="117.0" styleClass="btn" text="Details" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="715.0" layoutY="541.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="795.0" layoutY="557.0" text="\$ 0.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -12,14 +12,14 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="627.0" prefWidth="823.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+<AnchorPane id="AnchorPane" prefHeight="627.0" prefWidth="823.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
-        <URL value="@signup.css" />
+        <URL value="@../style/signup.css" />
     </stylesheets>
    <children>
       <ImageView fitHeight="474.0" fitWidth="350.0" layoutX="61.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@img1.jpg" />
+            <Image url="@../images/img2.jpg" />
          </image>
       </ImageView>
       <Label layoutX="120.0" layoutY="533.0" text="Already have an account?">

@@ -1,0 +1,39 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.title{
+    -fx-font: "Arial", sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 28px;
+}
+
+.sub-title{
+    -fx-font: "Arial", sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #176B87;
+}
+
+.table-view{
+    -fx-border-color: #000;
+    -fx-border-width: 2px;
+}
+
+.table-view .table-row-cell{
+    -fx-border-color: #000;
+    -fx-border-width: 1px;
+    -fx-padding: 5px 5px 5px 5px;
+}
+
+.btn{
+    -fx-background-color: #176B87;
+    -fx-text-fill: #fff;
+    -fx-border-radius: 10px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-text-fill: #fff;
+}

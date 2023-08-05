@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="698.0" prefWidth="932.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
     <stylesheets>
-        <URL value="@guest.css" />
+        <URL value="@../style/guest.css" />
     </stylesheets>
    <children>
       <Label layoutX="56.0" layoutY="37.0" styleClass="title" text="Guest" />
