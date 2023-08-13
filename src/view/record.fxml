@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="676.0" prefWidth="952.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+<AnchorPane id="AnchorPane" prefHeight="676.0" prefWidth="952.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
         <URL value="@../style/record.css" />
     </stylesheets>
@@ -18,8 +18,8 @@
       <Label layoutX="71.0" layoutY="117.0" styleClass="sub-title" text="Record Lists of Your Hotel" />
       <TableView layoutX="69.0" layoutY="153.0" prefHeight="380.0" prefWidth="846.0">
         <columns>
-          <TableColumn prefWidth="137.60000610351562" text="Room ID" />
-          <TableColumn prefWidth="146.40000915527344" text="Guest ID" />
+          <TableColumn prefWidth="137.60000610351562" text="Room #" />
+          <TableColumn prefWidth="146.40000915527344" text="Guest #" />
             <TableColumn prefWidth="181.5999755859375" text="Per Day" />
             <TableColumn prefWidth="181.60003662109375" text="Day Count" />
             <TableColumn prefWidth="196.79998779296875" text="Total" />
