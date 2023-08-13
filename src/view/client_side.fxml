@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="765.0" prefWidth="932.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Client_sideController">
+    <stylesheets>
+        <URL value="@../style/client_side.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="client_pane" prefHeight="766.0" prefWidth="1009.0">
+         <left>
+            <VBox prefHeight="766.0" prefWidth="246.0" style="-fx-background-color: #001C30;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="229.0" prefWidth="246.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="70.0" stroke="BLACK" strokeType="INSIDE" width="74.0" />
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="141.0">
+                           <children>
+                              <Label contentDisplay="CENTER" text="UserName" textFill="#fafafa">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="18.0" prefWidth="132.0" text="example@gmail.com" textFill="WHITE" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="246.0" styleClass="linkBtn" text="Room" />
+                  <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="246.0" styleClass="linkBtn" text="Bill &amp; Recepit" />
+                  <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="246.0" styleClass="linkBtn" text="Notification" />
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="330.0" prefWidth="246.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="110.0" styleClass="signout" text="Sign Out" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
