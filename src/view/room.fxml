@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane id="AnchorPane" prefHeight="702.0" prefWidth="922.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+<AnchorPane id="AnchorPane" prefHeight="702.0" prefWidth="922.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
         <URL value="@../style/room.css" />
     </stylesheets>
@@ -17,11 +17,11 @@
       <Line endX="-22.599990844726562" layoutX="151.0" layoutY="76.0" startX="-100.0" strokeWidth="4.0" />
       <TableView layoutX="50.0" layoutY="133.0" prefHeight="368.0" prefWidth="830.0">
         <columns>
-          <TableColumn prefWidth="107.99999618530273" text="Room ID" />
-          <TableColumn prefWidth="260.8000030517578" text="Room Type" />
-            <TableColumn prefWidth="188.00003051757812" text="Description" />
-            <TableColumn prefWidth="142.4000244140625" text="No. of Room" />
-            <TableColumn prefWidth="128.79998779296875" text="Per Day" />
+          <TableColumn prefWidth="61.600006103515625" text="#" />
+          <TableColumn prefWidth="186.39999389648438" text="Room Type" />
+            <TableColumn prefWidth="264.79998779296875" text="Notes" />
+            <TableColumn prefWidth="135.199951171875" text="No. of Bed" />
+            <TableColumn minWidth="0.0" prefWidth="179.20001220703125" text="Per Day" />
         </columns>
       </TableView>
       <Button layoutX="49.0" layoutY="515.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="98.0" styleClass="btn" text="Add" />
