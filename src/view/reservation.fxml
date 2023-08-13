@@ -5,8 +5,12 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="862.0" prefWidth="923.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
@@ -14,29 +18,108 @@
     </stylesheets>
    <children>
       <Label layoutX="37.0" layoutY="28.0" styleClass="title" text="Reservation" />
-      <Label layoutX="37.0" layoutY="111.0" styleClass="sub-title" text="Recent" />
-      <TableView layoutX="37.0" layoutY="142.0" prefHeight="264.0" prefWidth="854.0">
+      <Label layoutX="34.0" layoutY="323.0" styleClass="sub-title" text="Recent" />
+      <TableView layoutX="34.0" layoutY="354.0" prefHeight="302.0" prefWidth="854.0">
         <columns>
-          <TableColumn prefWidth="135.99999618530273" text="Booking ID" />
-          <TableColumn prefWidth="143.1999969482422" text="Customers ID" />
-            <TableColumn prefWidth="177.60003662109375" text="Phone Number" />
-            <TableColumn prefWidth="203.199951171875" text="Check in Date" />
-            <TableColumn prefWidth="198.39990234375" text="Check out Date" />
+          <TableColumn prefWidth="44.799983978271484" text="#" />
+          <TableColumn prefWidth="145.60003662109375" text="Email" />
+            <TableColumn prefWidth="108.80000305175781" text="Start" />
+            <TableColumn prefWidth="120.7999267578125" text="End" />
+            <TableColumn prefWidth="188.800048828125" text="Room Type" />
+            <TableColumn prefWidth="100.800048828125" text="Status" />
+            <TableColumn prefWidth="141.60009765625" text="Notes" />
         </columns>
       </TableView>
       <Line endX="-0.1999969482421875" endY="-7.62939453125E-6" layoutX="140.0" layoutY="73.0" startX="-100.0" strokeWidth="4.0" />
-      <TableView layoutX="37.0" layoutY="498.0" prefHeight="285.0" prefWidth="854.0">
-         <columns>
-            <TableColumn prefWidth="135.99999618530273" text="Booking ID" />
-            <TableColumn prefWidth="143.1999969482422" text="Customers ID" />
-            <TableColumn prefWidth="177.60003662109375" text="Phone Number" />
-            <TableColumn prefWidth="203.199951171875" text="Check in Date" />
-            <TableColumn prefWidth="198.39990234375" text="Check out Date" />
-         </columns>
-      </TableView>
-      <Label layoutX="37.0" layoutY="471.0" styleClass="sub-title" text="Past" />
-      <Button layoutX="758.0" layoutY="417.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" styleClass="btn" text="Check Detail" />
-      <Button layoutX="653.0" layoutY="417.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="96.0" styleClass="btn" text="Confirm" />
-      <Button layoutX="744.0" layoutY="796.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="148.0" styleClass="btn" text="Check Detail" />
+      <Button layoutX="753.0" layoutY="672.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" styleClass="btn" text="Check Detail" />
+      <Button layoutX="648.0" layoutY="672.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="96.0" styleClass="btn" text="Confirm" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="144.0" layoutX="37.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="186.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9ff1f" height="144.0" layoutX="238.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="186.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff26" height="144.0" layoutX="439.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="186.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff501f" height="144.0" layoutX="639.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="186.0" />
+      <Line endX="79.99998474121094" layoutX="143.0" layoutY="244.0" startX="-106.00001525878906" />
+      <Line endX="79.99998474121094" layoutX="344.0" layoutY="244.0" startX="-106.00001525878906" />
+      <Line endX="79.99998474121094" layoutX="545.0" layoutY="244.0" startX="-106.00001525878906" />
+      <Line endX="79.99998474121094" layoutX="745.0" layoutY="244.0" startX="-106.00001525878906" />
+      <Label layoutX="54.0" layoutY="204.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="204.0" text="Reservations" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="204.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="204.0" text="Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="461.0" layoutY="204.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="481.0" layoutY="204.0" text="Confirmed" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="656.0" layoutY="202.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="676.0" layoutY="202.0" text="Pending" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="251.0" text="View More &gt;" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="251.0" text="View More &gt;" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="461.0" layoutY="251.0" text="View More &gt;" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="656.0" layoutY="251.0" text="View More &gt;" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="26.0" layoutX="55.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/file-solid.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="26.0" layoutX="251.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/user-solid.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="26.0" layoutX="655.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/arrow-rotate-right-solid.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="26.0" layoutX="454.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/square-check-solid.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
