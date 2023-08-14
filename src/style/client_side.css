@@ -1,0 +1,37 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.links{
+    -fx-font-family: "Arial", sans-serif;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+}
+
+.links:hover{
+    -fx-text-fill: #DAFFFB;
+    -fx-translate-x: 10px;
+}
+
+.linkBtn{
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-family: "Arial", sans-serif;
+}
+.linkBtn:hover{
+    -fx-background-color: #64CCC5;
+    -fx-transform-x: 10px;
+}
+
+.signout{
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    -fx-background-color: #DAFFFB;
+    -fx-border-radius: 15px;
+}
