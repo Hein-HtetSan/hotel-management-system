@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="627.0" prefWidth="823.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="627.0" prefWidth="823.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel_management.SignupController">
     <stylesheets>
         <URL value="@../style/signup.css" />
     </stylesheets>
@@ -27,7 +27,7 @@
             <Font name="Arial" size="14.0" />
          </font>
       </Label>
-      <Hyperlink layoutX="287.0" layoutY="528.0" styleClass="font" text="Login">
+      <Hyperlink layoutX="287.0" layoutY="528.0" onAction="#onLogin" styleClass="font" text="Login">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -43,35 +43,40 @@
          </font>
       </Label>
       <Line endX="-7.5999755859375" layoutX="549.0" layoutY="87.0" startX="-100.0" strokeWidth="5.0" />
-      <TextField layoutX="447.0" layoutY="137.0" prefHeight="50.0" prefWidth="294.0" promptText="Enter Name" styleClass="input" />
+      <TextField fx:id="txtUserName" layoutX="447.0" layoutY="137.0" prefHeight="50.0" prefWidth="294.0" promptText="Enter Name" styleClass="input" />
       <Label layoutX="449.0" layoutY="114.0" text="Username">
          <font>
             <Font name="Arial Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="447.0" layoutY="232.0" prefHeight="50.0" prefWidth="294.0" promptText="Enter Email" styleClass="input" />
+      <TextField fx:id="txtEmail" layoutX="447.0" layoutY="232.0" prefHeight="50.0" prefWidth="294.0" promptText="Enter Email" styleClass="input" />
       <Label layoutX="449.0" layoutY="209.0" text="Email">
          <font>
             <Font name="Arial Bold" size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="447.0" layoutY="329.0" prefHeight="50.0" prefWidth="294.0" promptText="Enter Phone Number" styleClass="input" />
+      <TextField fx:id="txtPhoneNumber" layoutX="447.0" layoutY="329.0" prefHeight="50.0" prefWidth="294.0" promptText="Enter Phone Number" styleClass="input" />
       <Label layoutX="449.0" layoutY="306.0" text="Phone number">
          <font>
             <Font name="Arial Bold" size="13.0" />
          </font>
       </Label>
-      <PasswordField layoutX="449.0" layoutY="426.0" prefHeight="50.0" prefWidth="294.0" promptText="Enter Password" styleClass="input" />
+      <PasswordField fx:id="txtPassword" layoutX="449.0" layoutY="426.0" prefHeight="50.0" prefWidth="294.0" promptText="Enter Password" styleClass="input" />
       <Label layoutX="450.0" layoutY="402.0" text="Password">
          <font>
             <Font name="Arial Bold" size="13.0" />
          </font>
       </Label>
-      <Button layoutX="449.0" layoutY="507.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="97.0" styleClass="backbtn" text="Back">
+      <Button layoutX="449.0" layoutY="507.0" mnemonicParsing="false" onAction="#onBack" prefHeight="38.0" prefWidth="97.0" styleClass="backbtn" text="Back">
          <font>
             <Font name="Arial Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="643.0" layoutY="507.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="97.0" styleClass="singup" text="Signup" />
+      <Button layoutX="643.0" layoutY="507.0" mnemonicParsing="false" onAction="#onSignup" prefHeight="38.0" prefWidth="97.0" styleClass="singup" text="Signup" />
+      <Label fx:id="txtStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="431.0" layoutY="578.0" prefHeight="18.0" prefWidth="364.0" text="Status" textAlignment="CENTER" textFill="#e10e0e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
