@@ -53,7 +53,9 @@ public class Admin_reservationController implements Initializable {
     }
 
     @FXML
-    private void onRecord(ActionEvent event) {
+    private void onRecord(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("../view/record.fxml"));
+        spane.setCenter(root);
     }
     
 }
