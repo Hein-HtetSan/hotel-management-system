@@ -98,7 +98,7 @@ public class LoginController implements Initializable {
                 ResultSet rs = stmt.executeQuery();
                 if(rs.next()){
                     txtStatus.setText("Login Success!");
-                    Parent root = FXMLLoader.load(getClass().getResource("../view/client_side.fxml"));
+                    Parent root = FXMLLoader.load(getClass().getResource("../view/reservation_form.fxml"));
                     Scene scene = new Scene(root);
                     Stage stage = new Stage();
                     stage.setScene(scene);
