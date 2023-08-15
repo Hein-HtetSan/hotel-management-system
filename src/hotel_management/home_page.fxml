@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="621.0" prefWidth="837.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="621.0" prefWidth="837.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel_management.Home_pageController">
     <stylesheets>
         <URL value="@../style/home_page.css" />
     </stylesheets>
@@ -61,17 +61,17 @@
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="486.0" layoutY="457.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="106.0" styleClass="singup" text="Sign up">
+      <Button layoutX="486.0" layoutY="457.0" mnemonicParsing="false" onAction="#onSignup" prefHeight="42.0" prefWidth="106.0" styleClass="singup" text="Sign up">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="645.0" layoutY="457.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="106.0" styleClass="login" text="Login">
+      <Button layoutX="645.0" layoutY="457.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="42.0" prefWidth="106.0" styleClass="login" text="Login">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Hyperlink layoutX="572.0" layoutY="532.0" text="Administrator?">
+      <Hyperlink layoutX="572.0" layoutY="532.0" onAction="#onAdmin" text="Administrator?">
          <font>
             <Font name="Arial Bold Italic" size="13.0" />
          </font>
