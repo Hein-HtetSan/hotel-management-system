@@ -4,8 +4,13 @@
  */
 package hotel_management;
 
+import config.Config;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -55,6 +60,42 @@ public class LoginasAdminController implements Initializable {
             homeStage.close();
         } catch (IOException ex) {
             Logger.getLogger(Home_pageController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    @FXML
+    private void onLogin(ActionEvent event) throws ClassNotFoundException, SQLException {
+        
+        String email = txtEmail.getText();
+        String password = txtPassword.getText();
+        
+        if(email.isEmpty()){
+            txtStatus.setText("Eamil can't be blank!");
+        }else if(password.isEmpty()){
+            txtStatus.setText("Password can't be blank");
+        }else{
+            
+            Connection con = Config.getConnection();
+            PreparedStatement stmt = con.prepareStatement("SELECT * FROM admin WHERE email = ? AND password = ?");
+            stmt.setString(1, email);
+            stmt.setString(2, password);
+            ResultSet rs = stmt.executeQuery();
+            if(rs.next()){
+                txtStatus.setText("Login success");
+                try{
+                    Parent root = FXMLLoader.load(getClass().getResource("../view/admin_reservation.fxml"));
+                    Scene scene = new Scene(root);
+                    Stage stage = new Stage();
+                    stage.setScene(scene);
+                    stage.show();
+                    
+                    Stage homeStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    homeStage.close();
+                }catch(IOException e){
+                    e.getStackTrace();
+                }
+                
+            }
         }
     }
     
