@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="928.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="928.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel_management.LoginController">
     <stylesheets>
         <URL value="@../style/login.css" />
     </stylesheets>
@@ -33,8 +33,8 @@
          </font>
       </Label>
       <Line endX="-14.4000244140625" endY="-1.52587890625E-5" layoutX="568.0" layoutY="229.0" startX="-100.0" strokeWidth="4.0" />
-      <TextField layoutX="465.0" layoutY="282.0" prefHeight="53.0" prefWidth="364.0" styleClass="input" />
-      <PasswordField layoutX="465.0" layoutY="376.0" prefHeight="54.0" prefWidth="364.0" styleClass="input" />
+      <TextField fx:id="txtEmail" layoutX="465.0" layoutY="282.0" prefHeight="53.0" prefWidth="364.0" styleClass="input" />
+      <PasswordField fx:id="txtPassword" layoutX="465.0" layoutY="376.0" prefHeight="54.0" prefWidth="364.0" styleClass="input" />
       <Label layoutX="464.0" layoutY="262.0" text="Email">
          <font>
             <Font name="Arial" size="14.0" />
@@ -50,20 +50,25 @@
             <Font name="Arial" size="14.0" />
          </font>
       </Label>
-      <Hyperlink layoutX="284.0" layoutY="584.0" text="Sign up!">
+      <Hyperlink layoutX="284.0" layoutY="584.0" onAction="#onSignup" text="Sign up!">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Hyperlink>
-      <Button layoutX="464.0" layoutY="478.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" styleClass="backbtn" text="Back">
+      <Button layoutX="464.0" layoutY="478.0" mnemonicParsing="false" onAction="#onBack" prefHeight="42.0" prefWidth="98.0" styleClass="backbtn" text="Back">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="730.0" layoutY="478.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" styleClass="singup" text="Login">
+      <Button layoutX="730.0" layoutY="478.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="42.0" prefWidth="98.0" styleClass="singup" text="Login">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Button>
+      <Label fx:id="txtStatus" alignment="CENTER" layoutX="466.0" layoutY="564.0" prefHeight="18.0" prefWidth="364.0" text="Status" textFill="#e10808">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
