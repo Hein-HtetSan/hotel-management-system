@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="854.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="854.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel_management.LoginasAdminController">
     <stylesheets>
         <URL value="@../style/loginasadmin.css" />
     </stylesheets>
@@ -32,19 +32,19 @@
          </font>
       </Label>
       <Line endX="19.4000244140625" layoutX="538.0" layoutY="212.0" startX="-100.0" strokeWidth="4.0" />
-      <TextField layoutX="438.0" layoutY="266.0" prefHeight="54.0" prefWidth="349.0" styleClass="input" />
-      <PasswordField layoutX="437.0" layoutY="357.0" prefHeight="54.0" prefWidth="350.0" styleClass="input" />
+      <TextField fx:id="txtEmail" layoutX="438.0" layoutY="266.0" prefHeight="54.0" prefWidth="349.0" styleClass="input" />
+      <PasswordField fx:id="txtPassword" layoutX="437.0" layoutY="357.0" prefHeight="54.0" prefWidth="350.0" styleClass="input" />
       <Label layoutX="438.0" layoutY="242.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: &quot;Arial&quot;;" text="Email">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="436.0" layoutY="449.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="115.0" style="-fx-font-weight: bold;" styleClass="backbtn" text="Back">
+      <Button layoutX="436.0" layoutY="449.0" mnemonicParsing="false" onAction="#onBack" prefHeight="46.0" prefWidth="115.0" style="-fx-font-weight: bold;" styleClass="backbtn" text="Back">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="671.0" layoutY="449.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="115.0" styleClass="singup" text="Login">
+      <Button layoutX="671.0" layoutY="449.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="46.0" prefWidth="115.0" styleClass="singup" text="Login">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -52,6 +52,11 @@
       <Label layoutX="438.0" layoutY="338.0" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family: &quot;Arial&quot;;" text="Password">
          <font>
             <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtStatus" alignment="CENTER" layoutX="440.0" layoutY="530.0" prefHeight="18.0" prefWidth="338.0" text="Status" textFill="#f40b0b">
+         <font>
+            <Font name="System Bold" size="12.0" />
          </font>
       </Label>
    </children>
